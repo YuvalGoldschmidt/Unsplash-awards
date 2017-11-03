@@ -1,0 +1,587 @@
+/* Basic css */
+
+html, body{
+	height: 100%;
+	font-family: sans-serif;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Header */
+
+header {
+	height: calc(100% - 30px);
+}
+
+header div{
+	height: 100%;
+}
+
+header div.header-div{
+	float: left;
+	width: 50%;
+}
+
+header div.in{
+	margin: 15px;
+	position: relative;
+}
+
+header h4{
+	font-weight: 300;
+	margin: 0;
+	font-size: 20px;
+}
+
+header h1.heading{
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 85px;
+	display: none;
+}
+
+header div.left div.in{
+	padding: 15px;
+}
+
+header a.logo-to-site{
+	display: none;
+}
+
+header svg.logo{
+	width: 32px;
+	height: 30px;
+	float: left;
+}
+
+header h4.year{
+	margin-left: 40px;
+	margin-top: 7px;
+	display: none;
+}
+
+header a.rules{
+	position: absolute;
+	bottom: 30px;
+	left: 10px;
+	color: #999;
+	display: none;
+}
+
+header div.right div.in{
+	color: white;
+}
+
+header div.right div.slide{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-image: linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/bg header/01.jpg');
+	transition: all 1s linear;
+	display: none;
+}
+
+header h4.head-text{
+	width: 50%;
+	text-align: right;
+	line-height: 25px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	display: none;
+}
+
+header ul{
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+	margin: 0;
+	display: none;
+}
+
+header li{
+	display: inline-block;
+	margin: 0 5px;
+}
+
+header div.right a{
+	color: white;
+}
+
+/* Whats section */
+
+section.whats-unsplash{
+	margin-top: 300px;
+	min-height: calc(100% + 30px);
+	width: 100%;
+}
+
+section.whats-unsplash div.whats{
+	min-height: 100%;
+	margin: 0 15px;
+	display: none;
+}
+
+section.whats-unsplash h1.whats-text{
+	font-size: 58px;
+}
+
+section.whats-unsplash h2.whats-subtext{
+	font-size: 40px;
+	font-weight: 300;
+	margin-top: 5%;
+	line-height: 50px;
+}
+
+/* Photos section */
+
+section.photos-section{
+	margin-top: 100px;
+	margin-bottom: 50px;
+	color: white;
+}
+
+section.photos-section section.photos{
+	padding: 20px 25px 40px 55px;
+	background-position: 0px 0px, 50% 50%;
+	background-size: cover;
+	position: relative;
+	margin-bottom: 1px;
+}
+
+section.photos-section section.photos:nth-of-type(1){
+	background-image: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/bg photos-section/1.jpg');
+}
+
+section.photos-section section.photos:nth-of-type(2){
+	background-image: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/bg photos-section/2.jpg');
+}
+
+section.photos-section section.photos:nth-of-type(3){
+	background-image: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/bg photos-section/3.jpg');
+}
+
+section.photos-section section.photos:nth-of-type(4){
+	background-image: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/bg photos-section/4.jpg');
+}
+
+section.photos-section section.photos:nth-of-type(5){
+	background-image: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/bg photos-section/5.jpg');
+}
+
+section.photos-section section.photos:nth-of-type(6){
+	background-image: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/bg photos-section/6.jpg');
+}
+
+section.photos-section section.photos:nth-of-type(7){
+	background-image: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/bg photos-section/7.jpg');
+}
+
+section.photos-section section.photos:nth-of-type(8){
+	background-image: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/bg photos-section/8.jpg');
+}
+
+section.photos-section section.photos:nth-of-type(9){
+	background-image: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/bg photos-section/9.jpg');
+}
+
+section.photos-section section.photos:nth-of-type(10){
+	background-image: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/bg photos-section/10.jpg');
+}
+
+section.photos-section section.photos:nth-of-type(11){
+	background-image: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/bg photos-section/11.jpg');
+}
+
+section.photos-section section.photos:nth-of-type(12){
+	background-image: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/bg photos-section/12.jpg');
+}
+
+section.photos-section section.photos:nth-of-type(13){
+	background-image: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/bg photos-section/13.jpg');
+}
+
+section.photos-section h5{
+	font-size: 15px;
+	font-weight: 100;
+	margin-bottom: 0;
+}
+
+section.photos-section h4{
+	font-size: 20px;
+	font-weight: 100;
+	margin-top: 5px;
+}
+
+section.photos-section h1.photo-name{
+	font-size: 55px;
+	margin-top: 80px;
+	margin-bottom: 25px;
+}
+
+section.photos-section h4.photo-description{
+	width: 58%;
+	line-height: 33px;
+}
+
+section.photos-section div.submit{
+	width: 260px;
+	height: 55px;
+	border-radius: 5px;
+	background-color: rgba(170,170,170,.4);
+	display: grid;
+	margin-top: 45px;
+}
+
+section.photos-section h5.submit-text{
+	color: #e6e6e6;
+	font-size: 17px;
+	margin: auto;
+}
+
+section.photos-section a.collections-link{
+	height: 15px;
+	border: 1px solid rgb(180,180,180);
+	border-radius: 2px;
+	display: inline-grid;
+	padding: 4px 6px 5px;
+	margin: 100px 5px 0;
+	transition: border-color 0.5s;
+}
+
+section.photos-section a.collections-link:hover, section.photos-section a.collections-link:hover h5.collection-text{
+	border-color: white;
+	color: white;
+}
+
+section.photos-section h5.collection-text{
+	color: rgb(180,180,180);
+	font-weight: 600;
+	font-size: 12px;
+	margin: auto;
+	transition: color 0.5s;
+}
+
+section.photos-section h5.photographer{
+	position: absolute;
+	right: 50px;
+	bottom: 45px;
+}
+
+section.photos-section a.photographer-name{
+	color: rgb(200,200,200);
+	transition: color 0.5s;
+}
+
+section.photos-section a.photographer-name:hover{
+	color: white;
+}
+
+/* Judges section */
+
+section.judges{
+	margin: 120px 0 100px;
+}
+
+section.judges h1.judges-heading{
+	font-size: 58px;
+	margin-left: 50px;
+}
+
+section.judges section.judges3{
+	width: calc(100% - 100px);
+	margin: 30px 0;
+	padding: 0 50px;
+	display: flex;
+}
+
+section.judges div.judge{
+	width: 32%;
+	border: 1px solid #e6e6e6;
+	margin: 0;
+}
+
+section.judges div.judge:first-child{
+	margin-right: calc(2% - 7px);
+}
+
+section.judges div.judge:last-child{
+	margin-left: calc(2% - 7px);
+}
+
+section.judges div.company-logo{
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 999;
+}
+
+section.judges section.judges3:nth-of-type(1) div.judge:nth-of-type(1) div.company-logo{
+	background-image: url('img/company logo/01.jpg');
+}
+
+section.judges section.judges3:nth-of-type(1) div.judge:nth-of-type(2) div.company-logo{
+	background-image: url('img/company logo/02.jpg');
+}
+
+section.judges section.judges3:nth-of-type(1) div.judge:nth-of-type(3) div.company-logo{
+	background-image: url('img/company logo/03.jpg');
+}
+
+section.judges section.judges3:nth-of-type(2) div.judge:nth-of-type(1) div.company-logo{
+	background-image: url('img/company logo/04.jpg');
+}
+
+section.judges section.judges3:nth-of-type(2) div.judge:nth-of-type(2) div.company-logo{
+	background-image: url('img/company logo/05.jpg');
+}
+
+section.judges section.judges3:nth-of-type(2) div.judge:nth-of-type(3) div.company-logo{
+	background-image: url('img/company logo/06.jpg');
+}
+
+section.judges section.judges3:nth-of-type(3) div.judge:nth-of-type(1) div.company-logo{
+	background-image: url('img/company logo/07.jpg');
+}
+
+section.judges section.judges3:nth-of-type(3) div.judge:nth-of-type(2) div.company-logo{
+	background-image: url('img/company logo/08.jpg');
+}
+
+section.judges section.judges3:nth-of-type(3) div.judge:nth-of-type(3) div.company-logo{
+	background-image: url('img/company logo/09.jpg');
+}
+
+section.judges section.judges3:nth-of-type(4) div.judge:nth-of-type(1) div.company-logo{
+	background-image: url('img/company logo/10.jpg');
+}
+
+section.judges section.judges3:nth-of-type(4) div.judge:nth-of-type(2) div.company-logo{
+	background-image: url('img/company logo/11.jpg');
+}
+
+section.judges section.judges3:nth-of-type(4) div.judge:nth-of-type(3) div.company-logo{
+	background-image: url('img/company logo/12.jpg');
+}
+
+section.judges div.judge-photo{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 20px;
+	bottom: -25px;
+	background-size: cover;
+	background-position: center;
+	border: 3px solid white;
+	border-radius: 100%;
+	z-index: 1;
+}
+
+section.judges section.judges3:nth-of-type(1) div.judge:nth-of-type(1) div.judge-photo{
+	background-image: url('img/judge photo/01.jpg');
+}
+
+section.judges section.judges3:nth-of-type(1) div.judge:nth-of-type(2) div.judge-photo{
+	background-image: url('img/judge photo/02.jpg');
+}
+
+section.judges section.judges3:nth-of-type(1) div.judge:nth-of-type(3) div.judge-photo{
+	background-image: url('img/judge photo/03.jpg');
+}
+
+section.judges section.judges3:nth-of-type(2) div.judge:nth-of-type(1) div.judge-photo{
+	background-image: url('img/judge photo/04.jpg');
+}
+
+section.judges section.judges3:nth-of-type(2) div.judge:nth-of-type(2) div.judge-photo{
+	background-image: url('img/judge photo/05.jpg');
+}
+
+section.judges section.judges3:nth-of-type(2) div.judge:nth-of-type(3) div.judge-photo{
+	background-image: url('img/judge photo/06.jpg');
+}
+
+section.judges section.judges3:nth-of-type(3) div.judge:nth-of-type(1) div.judge-photo{
+	background-image: url('img/judge photo/07.jpg');
+}
+
+section.judges section.judges3:nth-of-type(3) div.judge:nth-of-type(2) div.judge-photo{
+	background-image: url('img/judge photo/08.jpg');
+}
+
+section.judges section.judges3:nth-of-type(3) div.judge:nth-of-type(3) div.judge-photo{
+	background-image: url('img/judge photo/09.jpg');
+}
+
+section.judges section.judges3:nth-of-type(4) div.judge:nth-of-type(1) div.judge-photo{
+	background-image: url('img/judge photo/10.jpg');
+}
+
+section.judges section.judges3:nth-of-type(4) div.judge:nth-of-type(2) div.judge-photo{
+	background-image: url('img/judge photo/11.jpg');
+}
+
+section.judges section.judges3:nth-of-type(4) div.judge:nth-of-type(3) div.judge-photo{
+	background-image: url('img/judge photo/12.jpg');
+}
+
+section.judges div.judge-details{
+	margin: 10% 15px 35px 30px;
+	height: 45%;
+}
+
+section.judges h4.judge-name{
+	font-size: 25px;
+	margin: 0;
+}
+
+section.judges h5.job-name{
+	font-size: 15px;
+	font-weight: 100;
+	margin: 10px 0 0 0;
+}
+
+section.judges h5.company-name{
+	font-size: 15px;
+	font-weight: 100;
+	margin: 5px 0 0 0;
+}
+
+section.judges h5.details-text{
+	color: #999;
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 22px;
+	margin: 15px 0 0 0;
+}
+
+/* Footer */
+
+footer{
+	background-color: black;
+	color: white;
+	margin: 0;
+	padding: 80px 40px 20px;
+}
+
+footer h2.partners-text{
+	margin: 0;
+	text-align: center;
+	font-size: 22px;
+}
+
+footer div.sponsors-logo{
+	margin: 70px 0 80px;
+}
+
+footer div.row{
+	width: 90%;
+	margin: 0 auto;
+}
+
+footer div.third-row{
+	width: 75%;
+}
+
+footer a.sponsor-link{
+	display: inline-block;
+	position: relative;
+	transition: opacity 0.5s;
+}
+
+footer a.sponsor-link:hover{
+	opacity: 0.8;
+}
+
+footer div.first-row a.sponsor-link{
+	width: 500px;
+	height: 150px;
+	margin: 0 calc(50% - 250px);
+}
+
+footer div.second-row a.sponsor-link{
+	width: 180px;
+	height: 72px;
+	margin: 0 calc(8.3% - 90px);
+}
+
+footer div.third-row a.sponsor-link{
+	width: 180px;
+	height: 72px;
+	margin: 0 calc(10% - 90px);
+}
+
+footer img.sponsor-img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+footer div.first-row img.sponsor-img{
+	max-width: 500px;
+	max-height: 150px;
+}
+
+footer div.second-row img.sponsor-img, footer div.third-row img.sponsor-img{
+	max-width: 180px;
+	max-height: 72px;
+}
+
+footer div.footer-links{
+	width: 90%;
+	margin: 0 auto;
+}
+
+footer div.footer-links a{
+	color: white;
+	opacity: 0.6;
+	display: inline-block;
+	margin: 0 10px;
+	transition: opacity 0.5s;
+}
+
+footer div.footer-links a:hover{
+	opacity: 1;
+}
+
+footer div.footer-links a h4{
+	font-weight: 100;
+}
+
+
+footer div.footer-links div.left-links{
+	float: left;
+	display: inline-block;
+	width: 30%;
+}
+
+footer div.footer-links div.footer-slogan{
+	float: center;
+	display: inline-block;
+	width: 30%;
+	margin: 0 5%;
+	text-align: center;
+}
+
+footer div.footer-links div.right-links{
+	float: right;
+	display: inline-block;
+	width: 30%;
+}
+
+footer div.footer-links div.footer-slogan h4.footer-text{
+	font-weight: 100;
+	display: inline-block;
+}
+
+footer div.footer-links div.right-links a{
+	float: right;
+}
