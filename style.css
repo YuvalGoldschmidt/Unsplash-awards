@@ -12,8 +12,9 @@ a {
 
 /* Header */
 
-header {
+header{
 	height: calc(100% - 30px);
+	padding: 15px;
 }
 
 header div{
@@ -26,7 +27,6 @@ header div.header-div{
 }
 
 header div.in{
-	margin: 15px;
 	position: relative;
 }
 
@@ -82,6 +82,7 @@ header div.right div.slide{
 	width: 100%;
 	height: 100%;
 	background-size: cover;
+	background-position: center;
 	transition: all 1s linear;
 	display: none;
 }
@@ -145,7 +146,6 @@ header div.right a{
 
 section.whats-unsplash{
 	margin-top: 300px;
-	min-height: calc(100% + 30px);
 	width: 100%;
 }
 
@@ -321,25 +321,16 @@ section.judges h1.judges-heading{
 	margin-left: 50px;
 }
 
-section.judges section.judges3{
+section.judges section.judges-container{
 	width: calc(100% - 100px);
-	margin: 30px 0;
-	padding: 0 50px;
-	display: flex;
+	margin: 0 50px;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
 }
 
 section.judges div.judge{
-	width: 32%;
 	border: 1px solid #e6e6e6;
-	margin: 0;
-}
-
-section.judges div.judge:first-child{
-	margin-right: calc(2% - 7px);
-}
-
-section.judges div.judge:last-child{
-	margin-left: calc(2% - 7px);
+	margin: 30px 10px;
 }
 
 section.judges div.company-logo{
@@ -350,51 +341,51 @@ section.judges div.company-logo{
 	z-index: 999;
 }
 
-section.judges section.judges3:nth-of-type(1) div.judge:nth-of-type(1) div.company-logo{
+section.judges div.judge:nth-of-type(1) div.company-logo{
 	background-image: url('img/company logo/01.jpg');
 }
 
-section.judges section.judges3:nth-of-type(1) div.judge:nth-of-type(2) div.company-logo{
+section.judges div.judge:nth-of-type(2) div.company-logo{
 	background-image: url('img/company logo/02.jpg');
 }
 
-section.judges section.judges3:nth-of-type(1) div.judge:nth-of-type(3) div.company-logo{
+section.judges div.judge:nth-of-type(3) div.company-logo{
 	background-image: url('img/company logo/03.jpg');
 }
 
-section.judges section.judges3:nth-of-type(2) div.judge:nth-of-type(1) div.company-logo{
+section.judges div.judge:nth-of-type(4) div.company-logo{
 	background-image: url('img/company logo/04.jpg');
 }
 
-section.judges section.judges3:nth-of-type(2) div.judge:nth-of-type(2) div.company-logo{
+section.judges div.judge:nth-of-type(5) div.company-logo{
 	background-image: url('img/company logo/05.jpg');
 }
 
-section.judges section.judges3:nth-of-type(2) div.judge:nth-of-type(3) div.company-logo{
+section.judges div.judge:nth-of-type(6) div.company-logo{
 	background-image: url('img/company logo/06.jpg');
 }
 
-section.judges section.judges3:nth-of-type(3) div.judge:nth-of-type(1) div.company-logo{
+section.judges div.judge:nth-of-type(7) div.company-logo{
 	background-image: url('img/company logo/07.jpg');
 }
 
-section.judges section.judges3:nth-of-type(3) div.judge:nth-of-type(2) div.company-logo{
+section.judges div.judge:nth-of-type(8) div.company-logo{
 	background-image: url('img/company logo/08.jpg');
 }
 
-section.judges section.judges3:nth-of-type(3) div.judge:nth-of-type(3) div.company-logo{
+section.judges div.judge:nth-of-type(9) div.company-logo{
 	background-image: url('img/company logo/09.jpg');
 }
 
-section.judges section.judges3:nth-of-type(4) div.judge:nth-of-type(1) div.company-logo{
+section.judges div.judge:nth-of-type(10) div.company-logo{
 	background-image: url('img/company logo/10.jpg');
 }
 
-section.judges section.judges3:nth-of-type(4) div.judge:nth-of-type(2) div.company-logo{
+section.judges div.judge:nth-of-type(11) div.company-logo{
 	background-image: url('img/company logo/11.jpg');
 }
 
-section.judges section.judges3:nth-of-type(4) div.judge:nth-of-type(3) div.company-logo{
+section.judges div.judge:nth-of-type(12) div.company-logo{
 	background-image: url('img/company logo/12.jpg');
 }
 
@@ -411,51 +402,51 @@ section.judges div.judge-photo{
 	z-index: 1;
 }
 
-section.judges section.judges3:nth-of-type(1) div.judge:nth-of-type(1) div.judge-photo{
+section.judges div.judge:nth-of-type(1) div.judge-photo{
 	background-image: url('img/judge photo/01.jpg');
 }
 
-section.judges section.judges3:nth-of-type(1) div.judge:nth-of-type(2) div.judge-photo{
+section.judges div.judge:nth-of-type(2) div.judge-photo{
 	background-image: url('img/judge photo/02.jpg');
 }
 
-section.judges section.judges3:nth-of-type(1) div.judge:nth-of-type(3) div.judge-photo{
+section.judges div.judge:nth-of-type(3) div.judge-photo{
 	background-image: url('img/judge photo/03.jpg');
 }
 
-section.judges section.judges3:nth-of-type(2) div.judge:nth-of-type(1) div.judge-photo{
+section.judges div.judge:nth-of-type(4) div.judge-photo{
 	background-image: url('img/judge photo/04.jpg');
 }
 
-section.judges section.judges3:nth-of-type(2) div.judge:nth-of-type(2) div.judge-photo{
+section.judges div.judge:nth-of-type(5) div.judge-photo{
 	background-image: url('img/judge photo/05.jpg');
 }
 
-section.judges section.judges3:nth-of-type(2) div.judge:nth-of-type(3) div.judge-photo{
+section.judges div.judge:nth-of-type(6) div.judge-photo{
 	background-image: url('img/judge photo/06.jpg');
 }
 
-section.judges section.judges3:nth-of-type(3) div.judge:nth-of-type(1) div.judge-photo{
+section.judges div.judge:nth-of-type(7) div.judge-photo{
 	background-image: url('img/judge photo/07.jpg');
 }
 
-section.judges section.judges3:nth-of-type(3) div.judge:nth-of-type(2) div.judge-photo{
+section.judges div.judge:nth-of-type(8) div.judge-photo{
 	background-image: url('img/judge photo/08.jpg');
 }
 
-section.judges section.judges3:nth-of-type(3) div.judge:nth-of-type(3) div.judge-photo{
+section.judges div.judge:nth-of-type(9) div.judge-photo{
 	background-image: url('img/judge photo/09.jpg');
 }
 
-section.judges section.judges3:nth-of-type(4) div.judge:nth-of-type(1) div.judge-photo{
+section.judges div.judge:nth-of-type(10) div.judge-photo{
 	background-image: url('img/judge photo/10.jpg');
 }
 
-section.judges section.judges3:nth-of-type(4) div.judge:nth-of-type(2) div.judge-photo{
+section.judges div.judge:nth-of-type(11) div.judge-photo{
 	background-image: url('img/judge photo/11.jpg');
 }
 
-section.judges section.judges3:nth-of-type(4) div.judge:nth-of-type(3) div.judge-photo{
+section.judges div.judge:nth-of-type(12) div.judge-photo{
 	background-image: url('img/judge photo/12.jpg');
 }
 
@@ -534,15 +525,13 @@ footer div.first-row a.sponsor-link{
 }
 
 footer div.second-row a.sponsor-link{
-	width: 180px;
+	width: 16.6666%;
 	height: 72px;
-	margin: 0 calc(8.3% - 90px);
 }
 
 footer div.third-row a.sponsor-link{
-	width: 180px;
+	width: 20%;
 	height: 72px;
-	margin: 0 calc(10% - 90px);
 }
 
 footer img.sponsor-img{
@@ -558,7 +547,7 @@ footer div.first-row img.sponsor-img{
 }
 
 footer div.second-row img.sponsor-img, footer div.third-row img.sponsor-img{
-	max-width: 180px;
+	max-width: 100%;
 	max-height: 72px;
 }
 
@@ -585,13 +574,11 @@ footer div.footer-links a h4{
 
 
 footer div.footer-links div.left-links{
-	float: left;
 	display: inline-block;
-	width: 30%;
+	width: 29%;
 }
 
 footer div.footer-links div.footer-slogan{
-	float: center;
 	display: inline-block;
 	width: 30%;
 	margin: 0 5%;
@@ -611,4 +598,179 @@ footer div.footer-links div.footer-slogan h4.footer-text{
 
 footer div.footer-links div.right-links a{
 	float: right;
+	max-width: calc(33.3333% - 13.3333px);
+	text-align: center;
+}
+
+/*Tablet*/
+@media screen and (max-width: 2733px){
+	/*Whats section*/
+	section.whats-unsplash{
+		margin-top: 170px;
+	}
+
+	section.whats-unsplash h1.whats-text{
+		font-size: 35px;
+	}
+
+	section.whats-unsplash h2.whats-subtext{
+		font-size: 30px;
+		margin-top: 0;
+		line-height: 38px;
+	}
+
+	/*Photos section*/
+	section.photos-section h5.collection-text{
+		font-size: 14px;
+	}
+
+	section.photos-section h5.photographer{
+		font-size: 17px;
+	}
+
+	/*Judges section*/
+	section.judges section.judges-container{
+		grid-template-columns: 50% 50%;
+	}
+
+	section.judges h4.judge-name{
+		font-size: 30px;
+	}
+
+	section.judges h5.job-name{
+		font-size: 20px;
+		margin-top: 15px;
+	}
+
+	section.judges h5.company-name{
+		font-size: 20px;
+		margin-top: 8px;
+	}
+
+	section.judges h5.details-text{
+		font-size: 18px;
+		line-height: 28px;
+	}
+}
+
+/*Phone*/
+@media screen and (max-width: 1081px){
+	/*Header section*/
+	header h4{
+		font-size: 25px;
+	}
+
+	header h4.head-text{
+		width: 75%;
+		line-height: 30px;
+	}
+
+	/*Photos section*/
+	section.photos-section h1.photo-name{
+		margin-top: 35px;
+	}
+
+	section.photos-section h4.photo-description{
+		width: 70%;
+		line-height: 40px;
+		font-size: 32px;
+	}
+
+	section.photos-section div.submit{
+		width: 400px;
+		height: 90px;
+	}
+
+	section.photos-section h5.submit-text{
+		font-size: 28px;
+	}
+
+	section.photos-section a.collections-link{
+		border-width: 2px;
+		padding: 5px auto 10px;
+		margin: 70px auto 55px;
+	}
+
+	section.photos-section h5.collection-text{
+		font-size: 21px;
+	}
+
+	section.photos-section h5.photographer{
+		font-size: 27px;
+	}
+
+	/*Judges section*/
+	section.judges section.judges-container{
+		grid-template-columns: 100%;
+	}
+
+	section.judges div.judge-details{
+		margin-top: 5%;
+	}
+
+	section.judges h4.judge-name{
+		font-size: 35px;
+	}
+
+	section.judges h5.job-name, section.judges h5.company-name{
+		font-size: 28px;
+	}
+
+	section.judges h5.details-text{
+		font-size: 30px;
+		line-height: 33px;
+	}
+
+	/*Footer section*/
+	footer div.sponsors-logo{
+		margin: 40px auto 60px;
+	}
+
+	footer div.row{
+		width: 100%;
+	}
+
+	footer div.third-row{
+		width: 90%;
+	}
+
+	footer div.first-row a.sponsor-link{
+		height: 110px;
+	}
+
+	footer div.first-row img.sponsor-img{
+		max-height: 110px;
+	}
+
+	footer div.footer-links{
+		width: 95%;
+	}
+
+	footer div.footer-links a h4{
+		font-size: 25px;
+	}
+
+	footer div.footer-links div.left-links{
+		display: inline-block;
+		width: 50%;
+	}
+
+	footer div.footer-links div.footer-slogan{
+		display: none;
+	}
+
+	footer div.footer-links div.right-links{
+		width: 50%;
+	}
+}
+
+/*Orientation: portrait*/
+@media screen and (orientation: portrait){
+	header{
+		height: calc(50% - 30px);
+	}
+
+	section.whats-unsplash{
+		margin-top: 80px;
+	}
 }
